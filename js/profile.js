@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             try {
-                const response = await fetch(`http://tunevibes.onrender.com/api/${apiEndpoint}`, {
+                const response = await fetch(`https://tunevibes.onrender.com/api/${apiEndpoint}`, {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${token}`
@@ -160,9 +160,9 @@ async function fetchAllUserPosts() {
   };
 
   const [blogs, music, videos] = await Promise.all([
-    fetchData("http://tunevibes.onrender.com/api/blogs/my-blogs"),
-    fetchData("http://tunevibes.onrender.com/api/music/my-music"),
-    fetchData("http://tunevibes.onrender.com/api/video/my-video"),
+    fetchData("https://tunevibes.onrender.com/api/blogs/my-blogs"),
+    fetchData("https://tunevibes.onrender.com/api/music/my-music"),
+    fetchData("https://tunevibes.onrender.com/api/video/my-video"),
   ]);
 
   const allPosts = [
@@ -201,7 +201,7 @@ function editPost(type, postId) {
 function deletePost(type, postId) {
   if (!confirm(`Are you sure you want to delete this ${type}?`)) return;
 
-  fetch(`http://tunevibes.onrender.com/api/${type}/${postId}`, {
+  fetch(`https://tunevibes.onrender.com/api/${type}/${postId}`, {
     method: "DELETE",
     headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` },
   })
