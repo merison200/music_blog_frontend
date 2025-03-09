@@ -15,7 +15,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     try {
         // Check if the email exists before submission
-        const emailCheckResponse = await fetch(`http://tunevibes.onrender.com/api/contact/check-email?email=${encodeURIComponent(email)}`);
+        const emailCheckResponse = await fetch(`https://tunevibes.onrender.com/api/contact/check-email?email=${encodeURIComponent(email)}`);
         const emailCheckText = await emailCheckResponse.text();
 
         if (emailCheckResponse.status === 400) {
@@ -27,7 +27,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
         const contactData = { name, phone, email, message };
 
         // Submit form data
-        const response = await fetch("http://tunevibes.onrender.com/api/contact/submit", {
+        const response = await fetch("https://tunevibes.onrender.com/api/contact/submit", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
