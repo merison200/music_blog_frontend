@@ -20,7 +20,7 @@ async function fetchPostDetails(type, postId) {
     }
 
     try {
-        const response = await fetch(`http://tunevibes.onrender.com/api/${type}/${postId}`, {
+        const response = await fetch(`https://tunevibes.onrender.com/api/${type}/${postId}`, {
             headers: { "Authorization": `Bearer ${token}` }
         });
 
@@ -111,7 +111,7 @@ async function updatePost(type) {
     }
 
     try {
-        const response = await fetch(`http://tunevibes.onrender.com/api/${type}/${postId}`, {
+        const response = await fetch(`https://tunevibes.onrender.com/api/${type}/${postId}`, {
             method: "PUT",
             headers: {
                 "Authorization": `Bearer ${token}`
