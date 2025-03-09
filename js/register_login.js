@@ -1,4 +1,4 @@
-const BASE_URL = "http://tunevibes.onrender.com/api/auth";
+const BASE_URL = "https://tunevibes.onrender.com/api/auth";
 
 // Register Functionality
 document.getElementById("registerForm")?.addEventListener("submit", async (e) => {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function loadBlogs() {
         try {
-            const response = await fetch("http://tunevibes.onrender.com/api/blogs");
+            const response = await fetch("https://tunevibes.onrender.com/api/blogs");
             if (!response.ok) throw new Error("Failed to fetch blogs");
             let blogs = await response.json();
 
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         try {
-            const response = await fetch(`http://tunevibes.onrender.com/api/blogs/${blogId}`);
+            const response = await fetch(`https://tunevibes.onrender.com/api/blogs/${blogId}`);
             if (!response.ok) throw new Error("Failed to fetch blog");
 
             const blog = await response.json();
