@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const keyword = urlParams.get("query");
 
         if (keyword) {
-            fetch(`http://tunevibes.onrender.com/api/search?keyword=${encodeURIComponent(keyword)}`)
+            fetch(`https://tunevibes.onrender.com/api/search?keyword=${encodeURIComponent(keyword)}`)
                 .then(response => response.json())
                 .then(data => displayResults(data))
                 .catch(error => console.error("Error fetching search results:", error));
