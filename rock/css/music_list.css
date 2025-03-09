@@ -1,0 +1,129 @@
+/*
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.music-box {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.music {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.music:hover {
+    transform: translateY(-5px);
+}
+
+.music h3 {
+    color: #ffcc00;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.music p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Music Box Container */
+.music-box {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Music List */
+#musicList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Music Item */
+.music {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Music Title */
+.music h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* Music Details */
+.music p {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #282828;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .music {
+        width: 90%;
+    }
+}
