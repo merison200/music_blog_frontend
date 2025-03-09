@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     async function loadMusic() {
         try {
-            const response = await fetch("http://tunevibes.onrender.com/api/music");
+            const response = await fetch("https://tunevibes.onrender.com/api/music");
             if (!response.ok) throw new Error("Failed to fetch music");
 
             const musicData = await response.json();
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     async function loadVideos() {
         try {
-            const response = await fetch("http://tunevibes.onrender.com/api/video");
+            const response = await fetch("https://tunevibes.onrender.com/api/video");
             if (!response.ok) throw new Error("Failed to fetch videos");
 
             const videoData = await response.json();
