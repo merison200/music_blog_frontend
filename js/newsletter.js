@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        fetch(`http://tunevibes.onrender.com/api/newsletter/subscribe?email=${encodeURIComponent(email)}`, {
+        fetch(`https://tunevibes.onrender.com/api/newsletter/subscribe?email=${encodeURIComponent(email)}`, {
             method: "POST"
         })
         .then(response => response.text())
